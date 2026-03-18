@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link de ícone da página -->
+    <link rel="shortcut icon" href="../ASSETS/IMG/favicon.png" type="image/x-icon">
+    <!-- Link para o Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="../CSS/nav_footer.css">
+    <link rel="stylesheet" href="../CSS/inscricao.css">
+    <title>Inscrição | Universo Tech</title>
+</head>
+
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <!-- Barra de navegação -->
+        <nav class="navbar" aria-label="Barra de navegação principal">
+            <div class="logo">
+                <a href="../index.html"><img src="../ASSETS/SVG/icon.svg" alt="Logo da Universo Tech"> Universo Tech</a>
+            </div>
+
+            <!-- Botão do menu mobile -->
+            <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
+                <span class="hamburger"></span>
+            </button>
+
+            <!-- Links do menu -->
+            <ul class="links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="participante.html">Área do Participante</a></li>
+                <li><a href="programacao.html">Programação</a></li>
+                <li><a href="inscricao.html">Inscrição</a></li>
+                <li><a href="certificados.html">Certificados</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main>
+        <!-- Banner -->
+        <section class="inscricao-hero" aria-labelledby="titulo-inscricao">
+
+            <div class="inscricao-hero__content">
+                <p class="inscricao-badge">Universo Tech 2026</p>
+                <h1 id="titulo-inscricao">Inscrição em Cursos e Palestras</h1>
+                <p>Escolha as atividades que deseja participar e finalize sua inscrição em poucos passos.</p>
+            </div>
+            <div class="inscricao-hero__stats" aria-label="Resumo de vagas">
+                <p><strong>8</strong> atividades disponíveis</p>
+                <p><strong>4</strong> cursos</p>
+                <p><strong>4</strong> palestras</p>
+            </div>
+        </section>
+
+        <!-- Formulário do participante -->
+        <section class="inscricao-layout" aria-label="Formulário de inscrição">
+            <form class="inscricao-form" action="#" method="post">
+                <article class="inscricao-card">
+                    <h2>Dados do participante</h2>
+                    <div class="form-grid">
+                        <div class="form-field">
+                            <label for="nome">Nome completo</label>
+                            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="instituicao">Instituição</label>
+                            <input type="text" id="instituicao" name="instituicao" placeholder="Sua instituição de ensino">
+                        </div>
+                        <div class="form-field">
+                            <label for="modalidade">Modalidade</label>
+                            <select id="modalidade" name="modalidade" required>
+                                <option value="">Selecione</option>
+                                <option value="presencial">Presencial</option>
+                                <option value="online">Online</option>
+                                <option value="hibrido">Híbrido</option>
+                            </select>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Cursos disponíveis -->
+                <article class="inscricao-card">
+                    <h2>Cursos disponíveis</h2>
+                    <p class="card-description">Selecione até 2 cursos para participar.</p>
+                    <div class="event-grid">
+                        <label class="event-option">
+                            <input type="checkbox" name="cursos" value="ia">
+                            <span>
+                                <strong>Curso de Python</strong>
+                                <small>06/04 a 10/04 - 09h às 12h</small>
+                            </span>
+                        </label>
+                        <label class="event-option">
+                            <input type="checkbox" name="cursos" value="web">
+                            <span>
+                                <strong>Curso de Excel</strong>
+                                <small>13/04 a 17/04 - 14h às 17h</small>
+                            </span>
+                        </label>
+                        <label class="event-option">
+                            <input type="checkbox" name="cursos" value="dados">
+                            <span>
+                                <strong>Curso de C#</strong>
+                                <small>20/04 a 24/04 - 09h às 12h</small>
+                            </span>
+                        </label>
+                        <label class="event-option">
+                            <input type="checkbox" name="cursos" value="ux">
+                            <span>
+                                <strong>Curso de Java</strong>
+                                <small>04/05 a 08/05 - 14h às 17h</small>
+                            </span>
+                        </label>
+                    </div>
+                </article>
+
+                <!-- Palestras disponíveis -->
+                <article class="inscricao-card">
+                    <h2>Palestras disponíveis</h2>
+                    <p class="card-description">Selecione as palestras de seu interesse.</p>
+                    <div class="event-grid">
+                        <label class="event-option">
+                            <input type="checkbox" name="palestras" value="futuro-ti">
+                            <span>
+                                <strong>O Uso do n8n nas Grandes Empresas</strong>
+                                <small>15/05 - 10h às 12h00</small>
+                            </span>
+                        </label>
+                        <label class="event-option">
+                            <input type="checkbox" name="palestras" value="carreira">
+                            <span>
+                                <strong>Tecnologia para o Meio Ambiente</strong>
+                                <small>18/05 - 10h às 12h00 </small>
+                            </span>
+                        </label>
+                        <label class="event-option">
+                            <input type="checkbox" name="palestras" value="seguranca">
+                            <span>
+                                <strong>O Uso da IA </strong>
+                                <small>19/05 - 15h às 17h</small>
+                            </span>
+                        </label>
+                        <label class="event-option">
+                            <input type="checkbox" name="palestras" value="acessibilidade">
+                            <span>
+                                <strong>O Uso de LIBRAS na Tecnologia</strong>
+                                <small>20/05 - 15h às 17h</small>
+                            </span>
+                        </label>
+                    </div>
+                </article>
+
+                <!-- Informações adicionais -->
+                <article class="inscricao-card">
+                    <h2>Informações adicionais</h2>
+                    <div class="form-field">
+                        <label for="observacoes">Observações</label>
+                        <textarea id="observacoes" name="observacoes" rows="4"
+                            placeholder="Ex.: necessidades de acessibilidade, preferências de turno, etc."></textarea>
+                    </div>
+                    <label class="checkbox-inline">
+                        <input type="checkbox" required>
+                        <span>Declaro que li e concordo com os termos de participação do evento.</span>
+                    </label>
+                    <button type="submit" class="btn-submit">Confirmar inscrição</button>
+                </article>
+            </form>
+
+            <!-- Resumo da inscrição -->
+            <aside class="inscricao-resumo" aria-label="Resumo da inscrição">
+                <h2>Resumo</h2>
+                <ul>
+                    <li>
+                        <span>Atividades selecionadas</span>
+                        <strong>0</strong>
+                    </li>
+                    <li>
+                        <span>Carga horária estimada</span>
+                        <strong>0h</strong>
+                    </li>
+                    <li>
+                        <span>Modalidade</span>
+                        <strong>-</strong>
+                    </li>
+                </ul>
+                <p>Após confirmar sua inscrição, você poderá acompanhar tudo na Área do Participante.</p>
+                <a href="participante.html" class="btn-resumo">Ir para Área do Participante</a>
+            </aside>
+        </section>
+
+        <!-- Plugin de acessibilidade - VLibras -->
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+                <div class="vw-plugin-top-wrapper"></div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Rodapé-->
+    <footer>
+        <div class="footer">
+            <div class="footer_section">
+                <h3>Sobre</h3>
+                <p>A empresa Universo Tech é uma plataforma digital voltada para a organização
+                    e gestão de eventos acadêmicos com Acessibilidade na área de Tecnologia da Informação.</p>
+            </div>
+            <div class="contatos">
+                <h3>Contatos</h3>
+                <p>Email: contato@universotech.com.br</p>
+                <p>Telefone: (11) 1234-5678</p>
+            </div>
+            <div class="redes_sociais">
+                <h3>Redes Sociais</h3>
+                <div class="redes_sociais_links">
+                    <a class="facebook" href="#" aria-label="Facebook da Universo Tech">
+                        <img src="../ASSETS/SVG/facebook.svg" alt="">
+                    </a>
+                    <a class="twitter" href="#" aria-label="Twitter da Universo Tech">
+                        <img src="../ASSETS/SVG/twitter.svg" alt="">
+                    </a>
+                    <a class="instagram" href="#" aria-label="Instagram da Universo Tech">
+                        <img src="../ASSETS/SVG/instagram.svg" alt="">
+                    </a>
+                    <a class="linkedin" href="#" aria-label="LinkedIn da Universo Tech">
+                        <img src="../ASSETS/SVG/linkedin.svg" alt="">
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="copyright">
+            <p>©2026 Universo Tech. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <!-- Script do VLibras -->
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+    <!-- Script do menu mobile -->
+    <script>
+        // Toggle do menu mobile
+        const navToggle = document.querySelector('.nav-toggle');
+        const navbar = document.querySelector('.navbar');
+        const links = document.querySelector('.links');
+
+        navToggle.addEventListener('click', () => {
+            const expanded = navToggle.getAttribute('aria-expanded') === 'true';
+            navToggle.setAttribute('aria-expanded', String(!expanded));
+            navbar.classList.toggle('active');
+        });
+
+        // Fecha o menu ao clicar em um link
+        links.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                if (navbar.classList.contains('active')) {
+                    navbar.classList.remove('active');
+                    navToggle.setAttribute('aria-expanded', 'false');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

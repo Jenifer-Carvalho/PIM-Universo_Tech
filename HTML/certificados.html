@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link de ícone da página -->
+    <link rel="shortcut icon" href="../ASSETS/IMG/favicon.png" type="image/x-icon">
+    <!-- Link para o Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="../CSS/nav_footer.css">
+    <link rel="stylesheet" href="../CSS/certificados.css">
+    <title>Certificados | Universo Tech</title>
+</head>
+
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <!-- Barra de navegação -->
+        <nav class="navbar" aria-label="Barra de navegação principal">
+            <div class="logo">
+                <a href="../index.html"><img src="../ASSETS/SVG/icon.svg" alt="Logo da Universo Tech"> Universo Tech</a>
+            </div>
+
+            <!-- Botão do menu mobile -->
+            <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
+                <span class="hamburger"></span>
+            </button>
+
+            <!-- Links do menu -->
+            <ul class="links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="participante.html">Área do Participante</a></li>
+                <li><a href="programacao.html">Programação</a></li>
+                <li><a href="inscricao.html">Inscrição</a></li>
+                <li><a href="certificados.html">Certificados</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main>
+        <!-- Banner -->
+        <section class="cert-hero" aria-labelledby="titulo-certificados">
+            <div class="hero-content">
+                <p class="hero-tag">Universo Tech 2026</p>
+                <h1 id="titulo-certificados">Certificados</h1>
+                <p>Acesse e baixe os certificados de participação nos cursos e palestras do evento após a conclusão das atividades.</p>
+                <div class="hero-actions">
+                    <a href="participante.html" class="hero-btn hero-btn-primary">Ir para Área do Participante</a>
+                    <a href="programacao.html" class="hero-btn hero-btn-secondary">Ver Programação</a>
+                </div>
+            </div>
+            <div class="hero-highlight" aria-label="Resumo de certificados">
+                <h2>Situação atual</h2>
+                <ul>
+                    <li><i class="fa-solid fa-certificate" aria-hidden="true"></i> 0 certificados disponíveis</li>
+                    <li><i class="fa-solid fa-hourglass-half" aria-hidden="true"></i> 8 atividades em andamento</li>
+                    <li><i class="fa-solid fa-clock" aria-hidden="true"></i> 0h concluídas</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Busca de certificado -->
+        <section class="cert-search-section" aria-labelledby="titulo-busca">
+            <div class="cert-search-box">
+                <h2 id="titulo-busca"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i> Buscar Certificado</h2>
+                <p>Informe seu CPF ou nome completo para localizar seus certificados disponíveis.</p>
+                <form class="cert-search-form" role="search" aria-label="Formulário de busca de certificados">
+                    <div class="cert-search-fields">
+                        <div class="cert-field">
+                            <label for="cpf-busca">CPF</label>
+                            <input type="text" id="cpf-busca" name="cpf" placeholder="000.000.000-00" maxlength="14" autocomplete="off">
+                        </div>
+                        <div class="cert-field">
+                            <label for="nome-busca">Nome completo</label>
+                            <input type="text" id="nome-busca" name="nome" placeholder="Seu nome completo" autocomplete="name">
+                        </div>
+                    </div>
+                    <button type="submit" class="btn-buscar">
+                        <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i> Buscar
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Lista de certificados -->
+        <section class="cert-list-section" aria-labelledby="titulo-lista">
+            <div class="cert-list-header">
+                <h2 id="titulo-lista">Meus Certificados</h2>
+                <p>Os certificados ficam disponíveis após a conclusão e validação de presença em cada atividade.</p>
+            </div>
+
+            <div class="cert-grid">
+
+                <!-- Certificado disponível -->
+                <article class="cert-card cert-card--disponivel" aria-label="Certificado disponível: Curso de Python">
+                    <div class="cert-card__icon" aria-hidden="true">
+                        <i class="fa-solid fa-file-certificate"></i>
+                    </div>
+                    <div class="cert-card__body">
+                        <span class="cert-badge cert-badge--disponivel">Disponível</span>
+                        <h3>Curso de Python</h3>
+                        <p class="cert-meta"><i class="fa-solid fa-calendar-days" aria-hidden="true"></i> 06 ABR a 10 ABR de 2026</p>
+                        <p class="cert-meta"><i class="fa-solid fa-clock" aria-hidden="true"></i> 8h de conteúdo</p>
+                        <p class="cert-meta"><i class="fa-solid fa-chalkboard-user" aria-hidden="true"></i> Curso presencial</p>
+                    </div>
+                    <div class="cert-card__actions">
+                        <a href="#" class="btn-cert btn-cert--download" aria-label="Baixar certificado do Curso de Python">
+                            <i class="fa-solid fa-download" aria-hidden="true"></i> Baixar
+                        </a>
+                        <a href="#" class="btn-cert btn-cert--view" aria-label="Visualizar certificado do Curso de Python">
+                            <i class="fa-solid fa-eye" aria-hidden="true"></i> Visualizar
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Certificado disponível -->
+                <article class="cert-card cert-card--disponivel" aria-label="Certificado disponível: Curso de Excel">
+                    <div class="cert-card__icon" aria-hidden="true">
+                        <i class="fa-solid fa-file-certificate"></i>
+                    </div>
+                    <div class="cert-card__body">
+                        <span class="cert-badge cert-badge--disponivel">Disponível</span>
+                        <h3>Curso de Excel</h3>
+                        <p class="cert-meta"><i class="fa-solid fa-calendar-days" aria-hidden="true"></i> 13 ABR a 17 ABR de 2026</p>
+                        <p class="cert-meta"><i class="fa-solid fa-clock" aria-hidden="true"></i> 8h de conteúdo</p>
+                        <p class="cert-meta"><i class="fa-solid fa-chalkboard-user" aria-hidden="true"></i> Curso presencial</p>
+                    </div>
+                    <div class="cert-card__actions">
+                        <a href="#" class="btn-cert btn-cert--download" aria-label="Baixar certificado do Curso de Excel">
+                            <i class="fa-solid fa-download" aria-hidden="true"></i> Baixar
+                        </a>
+                        <a href="#" class="btn-cert btn-cert--view" aria-label="Visualizar certificado do Curso de Excel">
+                            <i class="fa-solid fa-eye" aria-hidden="true"></i> Visualizar
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Certificado pendente -->
+                <article class="cert-card cert-card--pendente" aria-label="Certificado pendente: Curso de C">
+                    <div class="cert-card__icon" aria-hidden="true">
+                        <i class="fa-solid fa-file-circle-xmark"></i>
+                    </div>
+                    <div class="cert-card__body">
+                        <span class="cert-badge cert-badge--pendente">Pendente</span>
+                        <h3>Curso de C</h3>
+                        <p class="cert-meta"><i class="fa-solid fa-calendar-days" aria-hidden="true"></i> 20 ABR a 24 ABR de 2026</p>
+                        <p class="cert-meta"><i class="fa-solid fa-clock" aria-hidden="true"></i> 8h de conteúdo</p>
+                        <p class="cert-meta"><i class="fa-solid fa-chalkboard-user" aria-hidden="true"></i> Curso presencial</p>
+                    </div>
+                    <div class="cert-card__actions">
+                        <button class="btn-cert btn-cert--disabled" disabled aria-disabled="true">
+                            <i class="fa-solid fa-lock" aria-hidden="true"></i> Indisponível
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Certificado pendente -->
+                <article class="cert-card cert-card--pendente" aria-label="Certificado pendente: Curso de Java">
+                    <div class="cert-card__icon" aria-hidden="true">
+                        <i class="fa-solid fa-file-circle-xmark"></i>
+                    </div>
+                    <div class="cert-card__body">
+                        <span class="cert-badge cert-badge--pendente">Pendente</span>
+                        <h3>Curso de Java</h3>
+                        <p class="cert-meta"><i class="fa-solid fa-calendar-days" aria-hidden="true"></i> 27 ABR a 01 MAI de 2026</p>
+                        <p class="cert-meta"><i class="fa-solid fa-clock" aria-hidden="true"></i> 8h de conteúdo</p>
+                        <p class="cert-meta"><i class="fa-solid fa-chalkboard-user" aria-hidden="true"></i> Curso presencial</p>
+                    </div>
+                    <div class="cert-card__actions">
+                        <button class="btn-cert btn-cert--disabled" disabled aria-disabled="true">
+                            <i class="fa-solid fa-lock" aria-hidden="true"></i> Indisponível
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Palestra disponível -->
+                <article class="cert-card cert-card--disponivel" aria-label="Certificado disponível: Palestra O Uso da IA">
+                    <div class="cert-card__icon" aria-hidden="true">
+                        <i class="fa-solid fa-file-certificate"></i>
+                    </div>
+                    <div class="cert-card__body">
+                        <span class="cert-badge cert-badge--disponivel">Disponível</span>
+                        <h3>O Uso da IA</h3>
+                        <p class="cert-meta"><i class="fa-solid fa-calendar-days" aria-hidden="true"></i> 19 MAI de 2026</p>
+                        <p class="cert-meta"><i class="fa-solid fa-clock" aria-hidden="true"></i> 2h de conteúdo</p>
+                        <p class="cert-meta"><i class="fa-solid fa-microphone-lines" aria-hidden="true"></i> Palestra</p>
+                    </div>
+                    <div class="cert-card__actions">
+                        <a href="#" class="btn-cert btn-cert--download" aria-label="Baixar certificado da Palestra O Uso da IA">
+                            <i class="fa-solid fa-download" aria-hidden="true"></i> Baixar
+                        </a>
+                        <a href="#" class="btn-cert btn-cert--view" aria-label="Visualizar certificado da Palestra O Uso da IA">
+                            <i class="fa-solid fa-eye" aria-hidden="true"></i> Visualizar
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Palestra pendente -->
+                <article class="cert-card cert-card--pendente" aria-label="Certificado pendente: Palestra Automação com N8N">
+                    <div class="cert-card__icon" aria-hidden="true">
+                        <i class="fa-solid fa-file-circle-xmark"></i>
+                    </div>
+                    <div class="cert-card__body">
+                        <span class="cert-badge cert-badge--pendente">Pendente</span>
+                        <h3>Automação com N8N</h3>
+                        <p class="cert-meta"><i class="fa-solid fa-calendar-days" aria-hidden="true"></i> 20 MAI de 2026</p>
+                        <p class="cert-meta"><i class="fa-solid fa-clock" aria-hidden="true"></i> 2h de conteúdo</p>
+                        <p class="cert-meta"><i class="fa-solid fa-microphone-lines" aria-hidden="true"></i> Palestra</p>
+                    </div>
+                    <div class="cert-card__actions">
+                        <button class="btn-cert btn-cert--disabled" disabled aria-disabled="true">
+                            <i class="fa-solid fa-lock" aria-hidden="true"></i> Indisponível
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Palestra pendente -->
+                <article class="cert-card cert-card--pendente" aria-label="Certificado pendente: Palestra Ambiente de TI">
+                    <div class="cert-card__icon" aria-hidden="true">
+                        <i class="fa-solid fa-file-circle-xmark"></i>
+                    </div>
+                    <div class="cert-card__body">
+                        <span class="cert-badge cert-badge--pendente">Pendente</span>
+                        <h3>Ambiente de TI</h3>
+                        <p class="cert-meta"><i class="fa-solid fa-calendar-days" aria-hidden="true"></i> 21 MAI de 2026</p>
+                        <p class="cert-meta"><i class="fa-solid fa-clock" aria-hidden="true"></i> 2h de conteúdo</p>
+                        <p class="cert-meta"><i class="fa-solid fa-microphone-lines" aria-hidden="true"></i> Palestra</p>
+                    </div>
+                    <div class="cert-card__actions">
+                        <button class="btn-cert btn-cert--disabled" disabled aria-disabled="true">
+                            <i class="fa-solid fa-lock" aria-hidden="true"></i> Indisponível
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Palestra pendente -->
+                <article class="cert-card cert-card--pendente" aria-label="Certificado pendente: Palestra Tecnologia e Libras">
+                    <div class="cert-card__icon" aria-hidden="true">
+                        <i class="fa-solid fa-file-circle-xmark"></i>
+                    </div>
+                    <div class="cert-card__body">
+                        <span class="cert-badge cert-badge--pendente">Pendente</span>
+                        <h3>Tecnologia e Libras</h3>
+                        <p class="cert-meta"><i class="fa-solid fa-calendar-days" aria-hidden="true"></i> 22 MAI de 2026</p>
+                        <p class="cert-meta"><i class="fa-solid fa-clock" aria-hidden="true"></i> 2h de conteúdo</p>
+                        <p class="cert-meta"><i class="fa-solid fa-microphone-lines" aria-hidden="true"></i> Palestra</p>
+                    </div>
+                    <div class="cert-card__actions">
+                        <button class="btn-cert btn-cert--disabled" disabled aria-disabled="true">
+                            <i class="fa-solid fa-lock" aria-hidden="true"></i> Indisponível
+                        </button>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Plugin de acessibilidade - VLibras -->
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+                <div class="vw-plugin-top-wrapper"></div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Rodapé-->
+    <footer>
+        <div class="footer">
+            <div class="footer_section">
+                <h3>Sobre</h3>
+                <p>A empresa Universo Tech é uma plataforma digital voltada para a organização
+                    e gestão de eventos acadêmicos com Acessibilidade na área de Tecnologia da Informação.</p>
+            </div>
+            <div class="contatos">
+                <h3>Contatos</h3>
+                <p>Email: contato@universotech.com.br</p>
+                <p>Telefone: (11) 1234-5678</p>
+            </div>
+            <div class="redes_sociais">
+                <h3>Redes Sociais</h3>
+                <div class="redes_sociais_links">
+                    <a class="facebook" href="#" aria-label="Facebook da Universo Tech">
+                        <img src="../ASSETS/SVG/facebook.svg" alt="">
+                    </a>
+                    <a class="twitter" href="#" aria-label="Twitter da Universo Tech">
+                        <img src="../ASSETS/SVG/twitter.svg" alt="">
+                    </a>
+                    <a class="instagram" href="#" aria-label="Instagram da Universo Tech">
+                        <img src="../ASSETS/SVG/instagram.svg" alt="">
+                    </a>
+                    <a class="linkedin" href="#" aria-label="LinkedIn da Universo Tech">
+                        <img src="../ASSETS/SVG/linkedin.svg" alt="">
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="copyright">
+            <p>©2026 Universo Tech. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <!-- Script do VLibras -->
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+    <!-- Script do menu mobile -->
+    <script>
+        // Toggle do menu mobile
+        const navToggle = document.querySelector('.nav-toggle');
+        const navbar = document.querySelector('.navbar');
+        const links = document.querySelector('.links');
+
+        navToggle.addEventListener('click', () => {
+            const expanded = navToggle.getAttribute('aria-expanded') === 'true';
+            navToggle.setAttribute('aria-expanded', String(!expanded));
+            navbar.classList.toggle('active');
+        });
+
+        // Fecha o menu ao clicar em um link
+        links.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                if (navbar.classList.contains('active')) {
+                    navbar.classList.remove('active');
+                    navToggle.setAttribute('aria-expanded', 'false');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

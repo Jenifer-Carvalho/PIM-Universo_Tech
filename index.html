@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link de ícone da página -->
+    <link rel="shortcut icon" href="ASSETS/IMG/favicon.png" type="image/x-icon">
+    <!-- Link para o Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="CSS/nav_footer.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Universo Tech</title>
+</head>
+
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <!-- Barra de navegação -->
+        <nav class="navbar" aria-label="Barra de navegação principal">
+            <div class="logo">
+                <a href="index.html"><img src="ASSETS/SVG/icon.svg" alt="Logo da Universo Tech"> Universo Tech</a>
+            </div>
+
+            <!-- Botão do menu mobile -->
+            <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
+                <span class="hamburger"></span>
+            </button>
+
+            <!-- Links do menu -->
+            <ul class="links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="HTML/participante.html">Área do Participante</a></li>
+                <li><a href="HTML/programacao.html">Programação</a></li>
+                <li><a href="HTML/inscricao.html">Inscrição</a></li>
+                <li><a href="HTML/certificados.html">Certificados</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main>
+        <!-- Banner do Site -->
+        <section class="home-hero" aria-label="Banner do Universo Tech">
+            <picture class="home-hero__banner">
+                <source srcset="ASSETS/IMG/banner.png" media="(max-width: 768px)">
+                <img src="ASSETS/IMG/banner.png" alt="Banner do Universo Tech">
+            </picture>
+        </section>
+
+        <!-- Seção Sobre -->
+        <section class="sobre">
+            <h1>Sobre o Universo Tech</h1>
+            <p>No Universo Tech, você encontra um ambiente digital pensado para divulgar e organizar eventos acadêmicos
+                em TI (semanas de curso, palestras e atividades formativas), reunindo informação clara, acesso rápido e
+                experiência responsiva em qualquer dispositivo.
+
+                A plataforma foi concebida para apoiar formatos presenciais, híbridos e remotos, fortalecendo a
+                circulação de conhecimento e a construção de redes entre estudantes, docentes e convidados. Além disso,
+                o projeto considera a inclusão comunicacional, valorizando a acessibilidade e a presença da Libras como
+                parte central de uma experiência acadêmica mais acolhedora.
+
+                Explore os cursos e palestras, acompanhe a programação e participe de um ecossistema tecnológico que une
+                desenvolvimento web e compromisso com uma educação mais acessível.</p>
+        </section>
+
+        <!-- Seção Vídeo de Apresentação da Plataforma -->
+        <section id="video">
+            <h1>Vídeo de Apresentação da Plataforma</h1>
+
+            <div class="video">
+                <video src="ASSETS/VIDEO/plataforma_video.mp4" controls></video>
+            </div>
+            
+        </section>
+
+        <!-- Plugin de acessibilidade - VLibras -->
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+                <div class="vw-plugin-top-wrapper"></div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Rodapé-->
+    <footer>
+        <div class="footer">
+            <div class="footer_section">
+                <h3>Sobre</h3>
+                <p>A empresa Universo Tech é uma plataforma digital voltada para a organização
+                    e gestão de eventos acadêmicos com Acessibilidade na área de Tecnologia da Informação.</p>
+            </div>
+            <div class="contatos">
+                <h3>Contatos</h3>
+                <p>Email: contato@universotech.com.br</p>
+                <p>Telefone: (11) 1234-5678</p>
+            </div>
+            <div class="redes_sociais">
+                <h3>Redes Sociais</h3>
+                <div class="redes_sociais_links">
+                    <a class="facebook" href="#" aria-label="Facebook da Universo Tech">
+                        <img src="ASSETS/SVG/facebook.svg" alt="">
+                    </a>
+                    <a class="twitter" href="#" aria-label="Twitter da Universo Tech">
+                        <img src="ASSETS/SVG/twitter.svg" alt="">
+                    </a>
+                    <a class="instagram" href="#" aria-label="Instagram da Universo Tech">
+                        <img src="ASSETS/SVG/instagram.svg" alt="">
+                    </a>
+                    <a class="linkedin" href="#" aria-label="LinkedIn da Universo Tech">
+                        <img src="ASSETS/SVG/linkedin.svg" alt="">
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="copyright">
+            <p>©2026 Universo Tech. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <!-- Script do VLibras -->
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+    <!-- Script do menu mobile -->
+    <script>
+        // Toggle do menu mobile
+        const navToggle = document.querySelector('.nav-toggle');
+        const navbar = document.querySelector('.navbar');
+        const links = document.querySelector('.links');
+
+        navToggle.addEventListener('click', () => {
+            const expanded = navToggle.getAttribute('aria-expanded') === 'true';
+            navToggle.setAttribute('aria-expanded', String(!expanded));
+            navbar.classList.toggle('active');
+        });
+
+        // Fecha o menu ao clicar em um link
+        links.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                if (navbar.classList.contains('active')) {
+                    navbar.classList.remove('active');
+                    navToggle.setAttribute('aria-expanded', 'false');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

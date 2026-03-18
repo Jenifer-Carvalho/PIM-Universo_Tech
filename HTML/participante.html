@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link de ícone da página -->
+    <link rel="shortcut icon" href="../ASSETS/IMG/favicon.png" type="image/x-icon">
+    <!-- Link para o Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="../CSS/nav_footer.css">
+    <link rel="stylesheet" href="../CSS/participante.css">
+    <title>Área do Participante | Universo Tech</title>
+</head>
+
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <!-- Barra de navegação -->
+        <nav class="navbar" aria-label="Barra de navegação principal">
+            <div class="logo">
+                <a href="../index.html"><img src="../ASSETS/SVG/icon.svg" alt="Logo da Universo Tech"> Universo Tech</a>
+            </div>
+
+            <!-- Botão do menu mobile -->
+            <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
+                <span class="hamburger"></span>
+            </button>
+
+            <!-- Links do menu -->
+            <ul class="links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="participante.html">Área do Participante</a></li>
+                <li><a href="programacao.html">Programação</a></li>
+                <li><a href="inscricao.html">Inscrição</a></li>
+                <li><a href="certificados.html">Certificados</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main>
+        <!-- Banner -->
+        <section class="participant-hero" aria-labelledby="titulo-area-participante">
+            <div class="hero-content">
+                <p class="hero-tag">Universo Tech 2026</p>
+                <h1 id="titulo-area-participante">Área do Participante</h1>
+                <p>Acompanhe sua inscrição, os eventos confirmados e os certificados já liberados em um só lugar.</p>
+                <div class="hero-actions">
+                    <a href="#" class="btn btn-primary">Atualizar inscrição</a>
+                    <a href="programacao.html" class="btn btn-secondary">Ver programação</a>
+                </div>
+            </div>
+            <div class="hero-highlight" aria-label="Resumo de participação">
+                <h2>Resumo rápido</h2>
+                <ul>
+                    <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> 3 palestras confirmadas</li>
+                    <li><i class="fa-solid fa-certificate" aria-hidden="true"></i> 0 certificados disponíveis</li>
+                    <li><i class="fa-solid fa-clock" aria-hidden="true"></i> 0h de atividades concluídas</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Painel do participante -->
+        <section class="dashboard-grid" aria-label="Painel do participante">
+            <article class="card profile-card">
+                <h2>Seu perfil</h2>
+                <div class="profile-avatar" aria-hidden="true">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <h3>Jenifer Carvalho</h3>
+                <p>Participante ativa desde 2024</p>
+                <ul class="profile-info">
+                    <li><span>Email:</span> jenifer.carvalho@email.com</li>
+                    <li><span>Instituição:</span> Universidade Paulista - UNIP </li>
+                    <li><span>Modalidade:</span> Presencial</li>
+                </ul>
+                <a href="#" class="btn btn-secondary btn-full">Editar dados</a>
+            </article>
+
+            <!-- Indicadores -->
+            <article class="card stats-card">
+                <h2>Indicadores</h2>
+                <div class="stats-list">
+                    <div class="stat-item">
+                        <p class="stat-label">Próximos eventos</p>
+                        <p class="stat-value">03</p>
+                    </div>
+                    <div class="stat-item">
+                        <p class="stat-label">Certificados</p>
+                        <p class="stat-value">0</p>
+                    </div>
+                    <div class="stat-item">
+                        <p class="stat-label">Horas registradas</p>
+                        <p class="stat-value">0h</p>
+                    </div>
+                    <div class="stat-item">
+                        <p class="stat-label">Presença</p>
+                        <p class="stat-value">0%</p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Próximas atividades -->
+            <article class="card agenda-card">
+                <h2>Próximas atividades</h2>
+                <ul class="agenda-list">
+                    <li>
+                        <span class="agenda-date">06 ABR a 10 ABR</span>
+                        <div>
+                            <h3>Curso de Python</h3>
+                            <p>Sala 1 - 09h às 12h</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="agenda-date">13 ABR a 17 ABR</span>
+                        <div>
+                            <h3>Curso de Excel</h3>
+                            <p>Sala 2 - 14h às 17h</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="agenda-date">19 MAI</span>
+                        <div>
+                            <h3>O Uso da IA</h3>
+                            <p>Auditório C - 15h00 às 17h00</p>
+                        </div>
+                    </li>
+                </ul>
+            </article>
+
+            <!-- Ações rápidas -->
+            <article class="card actions-card">
+                <h2>Ações rápidas</h2>
+                <div class="actions-list">
+                    <a href="certificados.html" class="quick-action">
+                        <i class="fa-solid fa-file-arrow-down" aria-hidden="true"></i>
+                        <span>Baixar certificados</span>
+                    </a>
+                    <a href="#" class="quick-action">
+                        <i class="fa-solid fa-calendar-days" aria-hidden="true"></i>
+                        <span>Montar agenda</span>
+                    </a>
+                    <a href="#" class="quick-action">
+                        <i class="fa-solid fa-id-card" aria-hidden="true"></i>
+                        <span>Atualizar cadastro</span>
+                    </a>
+                    <a href="#" class="quick-action">
+                        <i class="fa-solid fa-headset" aria-hidden="true"></i>
+                        <span>Falar com suporte</span>
+                    </a>
+                </div>
+            </article>
+        </section>
+
+        <!-- Plugin de acessibilidade - VLibras -->
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+                <div class="vw-plugin-top-wrapper"></div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Rodapé-->
+    <footer>
+        <div class="footer">
+            <div class="footer_section">
+                <h3>Sobre</h3>
+                <p>A empresa Universo Tech é uma plataforma digital voltada para a organização
+                    e gestão de eventos acadêmicos com Acessibilidade na área de Tecnologia da Informação.</p>
+            </div>
+            <div class="contatos">
+                <h3>Contatos</h3>
+                <p>Email: contato@universotech.com.br</p>
+                <p>Telefone: (11) 1234-5678</p>
+            </div>
+            <div class="redes_sociais">
+                <h3>Redes Sociais</h3>
+                <div class="redes_sociais_links">
+                    <a class="facebook" href="#" aria-label="Facebook da Universo Tech">
+                        <img src="../ASSETS/SVG/facebook.svg" alt="">
+                    </a>
+                    <a class="twitter" href="#" aria-label="Twitter da Universo Tech">
+                        <img src="../ASSETS/SVG/twitter.svg" alt="">
+                    </a>
+                    <a class="instagram" href="#" aria-label="Instagram da Universo Tech">
+                        <img src="../ASSETS/SVG/instagram.svg" alt="">
+                    </a>
+                    <a class="linkedin" href="#" aria-label="LinkedIn da Universo Tech">
+                        <img src="../ASSETS/SVG/linkedin.svg" alt="">
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="copyright">
+            <p>©2026 Universo Tech. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <!-- Script do VLibras -->
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+    <!-- Script do menu mobile -->
+    <script>
+        // Toggle do menu mobile
+        const navToggle = document.querySelector('.nav-toggle');
+        const navbar = document.querySelector('.navbar');
+        const links = document.querySelector('.links');
+
+        navToggle.addEventListener('click', () => {
+            const expanded = navToggle.getAttribute('aria-expanded') === 'true';
+            navToggle.setAttribute('aria-expanded', String(!expanded));
+            navbar.classList.toggle('active');
+        });
+
+        // Fecha o menu ao clicar em um link
+        links.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                if (navbar.classList.contains('active')) {
+                    navbar.classList.remove('active');
+                    navToggle.setAttribute('aria-expanded', 'false');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

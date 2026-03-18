@@ -1,0 +1,151 @@
+/* Importando fontes de texto */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Regras*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variáveis */
+:root {
+    --fonte: 'Montserrat', sans-serif;
+    --fonte-secundaria: 'Roboto', sans-serif;
+    --cor-um: #ffffff;
+    --cor-dois: #c2dcff;
+    --cor-tres: #5ca3ff;
+    --cor-quatro: #1f80ff;
+    --cor-cinco: #004aad;
+    --cor-seis: #000000;
+}
+
+/* Banner */
+.home-hero {
+    width: min(1160px, calc(100% - 2rem));
+    margin: 1.25rem auto 0;
+    position: relative;
+    border-radius: 1rem;
+    overflow: hidden;
+    min-height: 360px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+.home-hero__banner,
+.home-hero__banner img {
+    width: 100%;
+    height: 100%;
+}
+
+.home-hero__banner img {
+    display: block;
+    object-fit: cover;
+}
+
+/* Seção Sobre */
+.sobre {
+    max-width: 900px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+    text-align: center;
+}
+
+.sobre h1 {
+    font-family: var(--fonte);
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--cor-cinco);
+    margin-bottom: 1.5rem;
+    position: relative;
+    display: inline-block;
+}
+
+.sobre h1::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: var(--cor-quatro);
+    margin: 0.5rem auto 0;
+    border-radius: 2px;
+}
+
+.sobre p {
+    font-family: var(--fonte-secundaria);
+    font-size: 1rem;
+    line-height: 1.8;
+    color: var(--cor-seis);
+    text-align: justify;
+}
+
+/* Seção Vídeo */
+#video {
+    background-color: var(--cor-cinco);
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+#video h1 {
+    font-family: var(--fonte);
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--cor-um);
+    margin-bottom: 2rem;
+    position: relative;
+    display: inline-block;
+}
+
+#video h1::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: var(--cor-tres);
+    margin: 0.5rem auto 0;
+    border-radius: 2px;
+}
+
+.video {
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
+}
+
+.video video {
+    width: 100%;
+    display: block;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .home-hero {
+        width: calc(100% - 1.4rem);
+        min-height: 120px;
+        margin-top: 0.8rem;
+        border-radius: 0.85rem;
+    }
+
+    .sobre {
+        margin: 2.5rem auto;
+    }
+
+    .sobre h1 {
+        font-size: 1.5rem;
+    }
+
+    #video {
+        padding: 2.5rem 1rem;
+    }
+
+    #video h1 {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 325px){
+     .home-hero {
+         min-height: 100px;
+     }
+}
