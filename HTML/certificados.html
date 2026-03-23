@@ -57,9 +57,9 @@
             <div class="hero-highlight" aria-label="Resumo de certificados">
                 <h2>Situação atual</h2>
                 <ul>
-                    <li><i class="fa-solid fa-certificate" aria-hidden="true"></i> 0 certificados disponíveis</li>
-                    <li><i class="fa-solid fa-hourglass-half" aria-hidden="true"></i> 8 atividades em andamento</li>
-                    <li><i class="fa-solid fa-clock" aria-hidden="true"></i> 0h concluídas</li>
+                    <li><i class="fa-solid fa-certificate" aria-hidden="true"></i> 1 certificado disponível</li>
+                    <li><i class="fa-solid fa-hourglass-half" aria-hidden="true"></i> 3 atividades em andamento</li>
+                    <li><i class="fa-solid fa-clock" aria-hidden="true"></i> 15h concluídas</li>
                 </ul>
             </div>
         </section>
@@ -68,12 +68,12 @@
         <section class="cert-search-section" aria-labelledby="titulo-busca">
             <div class="cert-search-box">
                 <h2 id="titulo-busca"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i> Buscar Certificado</h2>
-                <p>Informe seu CPF ou nome completo para localizar seus certificados disponíveis.</p>
+                <p>Informe seu e-mail ou nome completo para localizar seus certificados disponíveis.</p>
                 <form class="cert-search-form" role="search" aria-label="Formulário de busca de certificados">
                     <div class="cert-search-fields">
                         <div class="cert-field">
-                            <label for="cpf-busca">CPF</label>
-                            <input type="text" id="cpf-busca" name="cpf" placeholder="000.000.000-00" maxlength="14" autocomplete="off">
+                            <label for="email-busca">E-mail</label>
+                            <input type="email" id="email-busca" name="email" placeholder="exemplo@gmail.com" autocomplete="email">
                         </div>
                         <div class="cert-field">
                             <label for="nome-busca">Nome completo</label>
@@ -96,66 +96,63 @@
 
             <div class="cert-grid">
 
-                <!-- Certificado disponível -->
-                <article class="cert-card cert-card--disponivel" aria-label="Certificado disponível: Curso de Python">
-                    <div class="cert-card__icon" aria-hidden="true">
-                        <i class="fa-solid fa-file-certificate"></i>
-                    </div>
-                    <div class="cert-card__body">
-                        <span class="cert-badge cert-badge--disponivel">Disponível</span>
-                        <h3>Curso de Python</h3>
-                        <p class="cert-meta"><i class="fa-solid fa-calendar-days" aria-hidden="true"></i> 06 ABR a 10 ABR de 2026</p>
-                        <p class="cert-meta"><i class="fa-solid fa-clock" aria-hidden="true"></i> 8h de conteúdo</p>
-                        <p class="cert-meta"><i class="fa-solid fa-chalkboard-user" aria-hidden="true"></i> Curso presencial</p>
-                    </div>
-                    <div class="cert-card__actions">
-                        <a href="#" class="btn-cert btn-cert--download" aria-label="Baixar certificado do Curso de Python">
-                            <i class="fa-solid fa-download" aria-hidden="true"></i> Baixar
-                        </a>
-                        <a href="#" class="btn-cert btn-cert--view" aria-label="Visualizar certificado do Curso de Python">
-                            <i class="fa-solid fa-eye" aria-hidden="true"></i> Visualizar
-                        </a>
-                    </div>
-                </article>
-
-                <!-- Certificado disponível -->
-                <article class="cert-card cert-card--disponivel" aria-label="Certificado disponível: Curso de Excel">
-                    <div class="cert-card__icon" aria-hidden="true">
-                        <i class="fa-solid fa-file-certificate"></i>
-                    </div>
-                    <div class="cert-card__body">
-                        <span class="cert-badge cert-badge--disponivel">Disponível</span>
-                        <h3>Curso de Excel</h3>
-                        <p class="cert-meta"><i class="fa-solid fa-calendar-days" aria-hidden="true"></i> 13 ABR a 17 ABR de 2026</p>
-                        <p class="cert-meta"><i class="fa-solid fa-clock" aria-hidden="true"></i> 8h de conteúdo</p>
-                        <p class="cert-meta"><i class="fa-solid fa-chalkboard-user" aria-hidden="true"></i> Curso presencial</p>
-                    </div>
-                    <div class="cert-card__actions">
-                        <a href="#" class="btn-cert btn-cert--download" aria-label="Baixar certificado do Curso de Excel">
-                            <i class="fa-solid fa-download" aria-hidden="true"></i> Baixar
-                        </a>
-                        <a href="#" class="btn-cert btn-cert--view" aria-label="Visualizar certificado do Curso de Excel">
-                            <i class="fa-solid fa-eye" aria-hidden="true"></i> Visualizar
-                        </a>
-                    </div>
-                </article>
-
-                <!-- Certificado pendente -->
-                <article class="cert-card cert-card--pendente" aria-label="Certificado pendente: Curso de C">
+                <!-- Curso pendente -->
+                <article class="cert-card cert-card--pendente" aria-label="Certificado pendente: Curso de Python">
                     <div class="cert-card__icon" aria-hidden="true">
                         <i class="fa-solid fa-file-circle-xmark"></i>
                     </div>
                     <div class="cert-card__body">
                         <span class="cert-badge cert-badge--pendente">Pendente</span>
-                        <h3>Curso de C</h3>
-                        <p class="cert-meta"><i class="fa-solid fa-calendar-days" aria-hidden="true"></i> 20 ABR a 24 ABR de 2026</p>
-                        <p class="cert-meta"><i class="fa-solid fa-clock" aria-hidden="true"></i> 8h de conteúdo</p>
-                        <p class="cert-meta"><i class="fa-solid fa-chalkboard-user" aria-hidden="true"></i> Curso presencial</p>
+                        <h3>Curso de Python</h3>
+                        <p class="cert-meta"><i class="fa-solid fa-calendar-days" aria-hidden="true"></i>06/04 a 10/04 de 2026</p>
+                        <p class="cert-meta"><i class="fa-solid fa-clock" aria-hidden="true"></i> 15h de conteúdo</p>
+                        <p class="cert-meta"><i class="fa-solid fa-chalkboard-user" aria-hidden="true"></i>Curso</p>
                     </div>
                     <div class="cert-card__actions">
                         <button class="btn-cert btn-cert--disabled" disabled aria-disabled="true">
                             <i class="fa-solid fa-lock" aria-hidden="true"></i> Indisponível
                         </button>
+                    </div>
+                </article>
+
+                <!-- Curso pendente -->
+                <article class="cert-card cert-card--pendente" aria-label="Certificado pendente: Curso de Excel">
+                    <div class="cert-card__icon" aria-hidden="true">
+                        <i class="fa-solid fa-file-circle-xmark"></i>
+                    </div>
+                    <div class="cert-card__body">
+                        <span class="cert-badge cert-badge--pendente">Pendente</span>
+                        <h3>Curso de Excel</h3>
+                        <p class="cert-meta"><i class="fa-solid fa-calendar-days" aria-hidden="true"></i>13/04 a 17/04 de 2026</p>
+                        <p class="cert-meta"><i class="fa-solid fa-clock" aria-hidden="true"></i> 15h de conteúdo</p>
+                        <p class="cert-meta"><i class="fa-solid fa-chalkboard-user" aria-hidden="true"></i>Curso</p>
+                    </div>
+                    <div class="cert-card__actions">
+                        <button class="btn-cert btn-cert--disabled" disabled aria-disabled="true">
+                            <i class="fa-solid fa-lock" aria-hidden="true"></i> Indisponível
+                        </button>
+                    </div>
+                </article>
+
+                     <!-- Curso Disponível -->
+                <article class="cert-card cert-card--disponivel" aria-label="Certificado disponível: Curso de C#">
+                    <div class="cert-card__icon" aria-hidden="true">
+                        <i class="fa-solid fa-file-arrow-down"></i>
+                    </div>
+                    <div class="cert-card__body">
+                        <span class="cert-badge cert-badge--disponivel">Disponível</span>
+                        <h3>Curso de C#</h3>
+                        <p class="cert-meta"><i class="fa-solid fa-calendar-days" aria-hidden="true"></i>20/04 a 24/04 de 2026</p>
+                        <p class="cert-meta"><i class="fa-solid fa-clock" aria-hidden="true"></i> 15h de conteúdo</p>
+                        <p class="cert-meta"><i class="fa-solid fa-chalkboard-user" aria-hidden="true"></i> Curso</p>
+                    </div>
+                    <div class="cert-card__actions">
+                        <a href="#" class="btn-cert btn-cert--download" aria-label="Baixar certificado do Curso de C#">
+                            <i class="fa-solid fa-download" aria-hidden="true"></i> Baixar
+                        </a>
+                        <a href="#" class="btn-cert btn-cert--view" aria-label="Visualizar certificado do Curso de C#">
+                            <i class="fa-solid fa-eye" aria-hidden="true"></i> Visualizar
+                        </a>
                     </div>
                 </article>
 
@@ -167,9 +164,9 @@
                     <div class="cert-card__body">
                         <span class="cert-badge cert-badge--pendente">Pendente</span>
                         <h3>Curso de Java</h3>
-                        <p class="cert-meta"><i class="fa-solid fa-calendar-days" aria-hidden="true"></i> 27 ABR a 01 MAI de 2026</p>
-                        <p class="cert-meta"><i class="fa-solid fa-clock" aria-hidden="true"></i> 8h de conteúdo</p>
-                        <p class="cert-meta"><i class="fa-solid fa-chalkboard-user" aria-hidden="true"></i> Curso presencial</p>
+                        <p class="cert-meta"><i class="fa-solid fa-calendar-days" aria-hidden="true"></i> 04/05 a 08/05 de 2026</p>
+                        <p class="cert-meta"><i class="fa-solid fa-clock" aria-hidden="true"></i> 15h de conteúdo</p>
+                        <p class="cert-meta"><i class="fa-solid fa-chalkboard-user" aria-hidden="true"></i> Curso </p>
                     </div>
                     <div class="cert-card__actions">
                         <button class="btn-cert btn-cert--disabled" disabled aria-disabled="true">
@@ -178,37 +175,53 @@
                     </div>
                 </article>
 
-                <!-- Palestra disponível -->
-                <article class="cert-card cert-card--disponivel" aria-label="Certificado disponível: Palestra O Uso da IA">
+                <!-- Palestra pendente -->
+                <article class="cert-card cert-card--pendente" aria-label="Certificado pendente: O Uso do n8n nas Grandes Empresas">
                     <div class="cert-card__icon" aria-hidden="true">
-                        <i class="fa-solid fa-file-certificate"></i>
+                        <i class="fa-solid fa-file-circle-xmark"></i>
                     </div>
                     <div class="cert-card__body">
-                        <span class="cert-badge cert-badge--disponivel">Disponível</span>
+                        <span class="cert-badge cert-badge--pendente">Pendente</span>
+                        <h3>O Uso do n8n nas Grandes Empresas</h3>
+                        <p class="cert-meta"><i class="fa-solid fa-calendar-days" aria-hidden="true"></i> 18/05 de 2026</p>
+                        <p class="cert-meta"><i class="fa-solid fa-clock" aria-hidden="true"></i> 2h de conteúdo</p>
+                        <p class="cert-meta"><i class="fa-solid fa-microphone-lines" aria-hidden="true"></i> Palestra</p>
+                    </div>
+                    <div class="cert-card__actions">
+                        <button class="btn-cert btn-cert--disabled" disabled aria-disabled="true">
+                            <i class="fa-solid fa-lock" aria-hidden="true"></i> Indisponível
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Palestra pendente -->
+                <article class="cert-card cert-card--pendente" aria-label="Certificado pendente: Tecnologia para o Meio Ambiente">
+                    <div class="cert-card__icon" aria-hidden="true">
+                        <i class="fa-solid fa-file-circle-xmark"></i>
+                    </div>
+                    <div class="cert-card__body">
+                        <span class="cert-badge cert-badge--pendente">Pendente</span>
+                        <h3>Tecnologia para o Meio Ambiente</h3>
+                        <p class="cert-meta"><i class="fa-solid fa-calendar-days" aria-hidden="true"></i> 18/05 de 2026</p>
+                        <p class="cert-meta"><i class="fa-solid fa-clock" aria-hidden="true"></i> 2h de conteúdo</p>
+                        <p class="cert-meta"><i class="fa-solid fa-microphone-lines" aria-hidden="true"></i> Palestra</p>
+                    </div>
+                    <div class="cert-card__actions">
+                        <button class="btn-cert btn-cert--disabled" disabled aria-disabled="true">
+                            <i class="fa-solid fa-lock" aria-hidden="true"></i> Indisponível
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Palestra pendente -->
+                <article class="cert-card cert-card--pendente" aria-label="Certificado pendente: O Uso da IA">
+                    <div class="cert-card__icon" aria-hidden="true">
+                        <i class="fa-solid fa-file-circle-xmark"></i>
+                    </div>
+                    <div class="cert-card__body">
+                        <span class="cert-badge cert-badge--pendente">Pendente</span>
                         <h3>O Uso da IA</h3>
-                        <p class="cert-meta"><i class="fa-solid fa-calendar-days" aria-hidden="true"></i> 19 MAI de 2026</p>
-                        <p class="cert-meta"><i class="fa-solid fa-clock" aria-hidden="true"></i> 2h de conteúdo</p>
-                        <p class="cert-meta"><i class="fa-solid fa-microphone-lines" aria-hidden="true"></i> Palestra</p>
-                    </div>
-                    <div class="cert-card__actions">
-                        <a href="#" class="btn-cert btn-cert--download" aria-label="Baixar certificado da Palestra O Uso da IA">
-                            <i class="fa-solid fa-download" aria-hidden="true"></i> Baixar
-                        </a>
-                        <a href="#" class="btn-cert btn-cert--view" aria-label="Visualizar certificado da Palestra O Uso da IA">
-                            <i class="fa-solid fa-eye" aria-hidden="true"></i> Visualizar
-                        </a>
-                    </div>
-                </article>
-
-                <!-- Palestra pendente -->
-                <article class="cert-card cert-card--pendente" aria-label="Certificado pendente: Palestra Automação com N8N">
-                    <div class="cert-card__icon" aria-hidden="true">
-                        <i class="fa-solid fa-file-circle-xmark"></i>
-                    </div>
-                    <div class="cert-card__body">
-                        <span class="cert-badge cert-badge--pendente">Pendente</span>
-                        <h3>Automação com N8N</h3>
-                        <p class="cert-meta"><i class="fa-solid fa-calendar-days" aria-hidden="true"></i> 20 MAI de 2026</p>
+                        <p class="cert-meta"><i class="fa-solid fa-calendar-days" aria-hidden="true"></i> 19/05 de 2026</p>
                         <p class="cert-meta"><i class="fa-solid fa-clock" aria-hidden="true"></i> 2h de conteúdo</p>
                         <p class="cert-meta"><i class="fa-solid fa-microphone-lines" aria-hidden="true"></i> Palestra</p>
                     </div>
@@ -220,33 +233,14 @@
                 </article>
 
                 <!-- Palestra pendente -->
-                <article class="cert-card cert-card--pendente" aria-label="Certificado pendente: Palestra Ambiente de TI">
+                <article class="cert-card cert-card--pendente" aria-label="Certificado pendente: O Uso de LIBRAS na Tecnologia">
                     <div class="cert-card__icon" aria-hidden="true">
                         <i class="fa-solid fa-file-circle-xmark"></i>
                     </div>
                     <div class="cert-card__body">
                         <span class="cert-badge cert-badge--pendente">Pendente</span>
-                        <h3>Ambiente de TI</h3>
-                        <p class="cert-meta"><i class="fa-solid fa-calendar-days" aria-hidden="true"></i> 21 MAI de 2026</p>
-                        <p class="cert-meta"><i class="fa-solid fa-clock" aria-hidden="true"></i> 2h de conteúdo</p>
-                        <p class="cert-meta"><i class="fa-solid fa-microphone-lines" aria-hidden="true"></i> Palestra</p>
-                    </div>
-                    <div class="cert-card__actions">
-                        <button class="btn-cert btn-cert--disabled" disabled aria-disabled="true">
-                            <i class="fa-solid fa-lock" aria-hidden="true"></i> Indisponível
-                        </button>
-                    </div>
-                </article>
-
-                <!-- Palestra pendente -->
-                <article class="cert-card cert-card--pendente" aria-label="Certificado pendente: Palestra Tecnologia e Libras">
-                    <div class="cert-card__icon" aria-hidden="true">
-                        <i class="fa-solid fa-file-circle-xmark"></i>
-                    </div>
-                    <div class="cert-card__body">
-                        <span class="cert-badge cert-badge--pendente">Pendente</span>
-                        <h3>Tecnologia e Libras</h3>
-                        <p class="cert-meta"><i class="fa-solid fa-calendar-days" aria-hidden="true"></i> 22 MAI de 2026</p>
+                        <h3>O Uso de LIBRAS na Tecnologia</h3>
+                        <p class="cert-meta"><i class="fa-solid fa-calendar-days" aria-hidden="true"></i> 20/05 de 2026</p>
                         <p class="cert-meta"><i class="fa-solid fa-clock" aria-hidden="true"></i> 2h de conteúdo</p>
                         <p class="cert-meta"><i class="fa-solid fa-microphone-lines" aria-hidden="true"></i> Palestra</p>
                     </div>

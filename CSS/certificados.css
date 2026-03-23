@@ -21,7 +21,6 @@
 }
 
 main {
-    background: var(--cor-um);
     padding: 2rem 1.2rem 3rem;
 }
 
@@ -163,7 +162,7 @@ main {
 .cert-search-box p,
 .cert-list-header p {
     font-family: var(--fonte-secundaria);
-    color: #24456f;
+    color: var(--cor-cinco);
     line-height: 1.55;
 }
 
@@ -188,7 +187,7 @@ main {
 .cert-field label {
     font-family: var(--fonte);
     font-size: 0.92rem;
-    color: #1a365b;
+    color: var(--cor-cinco);
 }
 
 .cert-field input {
@@ -198,12 +197,16 @@ main {
     font-family: var(--fonte-secundaria);
     font-size: 0.95rem;
     color: var(--cor-seis);
-    background-color: #fdfefe;
+    background-color: var(--cor-um);
 }
 
 .cert-field input:focus {
     outline: 2px solid var(--cor-tres);
     border-color: var(--cor-dois);
+}
+
+.cert-field input[type="email"] {
+    text-transform: none;
 }
 
 .btn-buscar,
@@ -280,7 +283,7 @@ main {
 .cert-meta {
     font-family: var(--fonte-secundaria);
     font-size: 0.93rem;
-    color: #24456f;
+    color: var(--cor-cinco);
     display: flex;
     align-items: center;
     gap: 0.5rem;
@@ -331,7 +334,7 @@ main {
 }
 
 .btn-cert--disabled {
-    background-color: #e8edf5;
+    background-color: var(--cor-um);
     color: #6c7a8c;
     cursor: not-allowed;
 }
